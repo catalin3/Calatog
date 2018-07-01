@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorPaneStudent" prefHeight="531.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StudentViewController">
+    <children>
+        <TableView fx:id="tableViewStudent" layoutX="14.0" layoutY="41.0" prefHeight="467.0" prefWidth="377.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="numeColumn" prefWidth="75.0" text="Nume" />
+                <TableColumn fx:id="grupaColumn" prefWidth="75.0" text="Grupa" />
+                <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
+                <TableColumn fx:id="profesorColumn" prefWidth="75.0" text="Profesor" />
+            </columns>
+        </TableView>
+        <Label fx:id="labelId" layoutX="480.0" layoutY="77.0" text="Id" />
+        <Label fx:id="labelNume" layoutX="480.0" layoutY="110.0" text="Nume" />
+        <Label fx:id="labelGrupa" layoutX="480.0" layoutY="144.0" text="Grupa" />
+        <Label fx:id="labelEmail" layoutX="483.0" layoutY="178.0" text="Email" />
+        <Label fx:id="labelProfesor" layoutX="480.0" layoutY="211.0" text="Profesor" />
+        <TextField fx:id="textFieldId" layoutX="576.0" layoutY="72.0" />
+        <TextField fx:id="textFieldNume" layoutX="576.0" layoutY="105.0" />
+        <TextField fx:id="textFieldGrupa" layoutX="576.0" layoutY="139.0" />
+        <TextField fx:id="textFieldEmail" layoutX="576.0" layoutY="173.0" />
+        <TextField fx:id="textFieldProfesor" layoutX="576.0" layoutY="206.0" />
+        <Button fx:id="buttonAdauga" layoutX="447.0" layoutY="319.0" mnemonicParsing="false" onAction="#saveStudent" text="Adauga" />
+        <Button fx:id="buttonModifica" layoutX="559.0" layoutY="319.0" mnemonicParsing="false" onAction="#updateStudent" text="Modifica" />
+        <Button fx:id="buttonElimina" layoutX="681.0" layoutY="319.0" mnemonicParsing="false" onAction="#deleteStudent" text="Elimina" />
+        <Button fx:id="buttonSterge" layoutX="637.0" layoutY="250.0" mnemonicParsing="false" onAction="#clearStudentFields" text="Sterge" />
+      <Button fx:id="buttonFiltruNume" layoutX="451.0" layoutY="371.0" mnemonicParsing="false" onAction="#filterNume" text="FiltruNume" />
+      <Button fx:id="buttonFiltruGrupa" layoutX="451.0" layoutY="419.0" mnemonicParsing="false" onAction="#filterGrupa" text="FiltruGrupa" />
+      <Button fx:id="buttonFiltruProfesor" layoutX="451.0" layoutY="469.0" mnemonicParsing="false" onAction="#filterProfesor" text="FiltruProfesor" />
+      <TextField fx:id="textFieldFiltruNume" layoutX="587.0" layoutY="371.0" prefHeight="31.0" prefWidth="176.0" />
+      <TextField fx:id="textFieldFiltruGrupa" layoutX="588.0" layoutY="419.0" prefHeight="31.0" prefWidth="176.0" />
+      <TextField fx:id="textFieldFiltrProfesor" layoutX="588.0" layoutY="469.0" prefHeight="31.0" prefWidth="176.0" />
+    </children>
+</AnchorPane>

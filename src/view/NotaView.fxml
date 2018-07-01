@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorPaneStudent" prefHeight="531.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.NotaViewController">
+    <children>
+        <TableView fx:id="tableViewNota" layoutX="14.0" layoutY="41.0" prefHeight="467.0" prefWidth="377.0">
+            <columns>
+                <TableColumn fx:id="idStudentColumn" prefWidth="75.0" text="IdStudent" />
+                <TableColumn fx:id="numarTemaColumn" prefWidth="75.0" text="NumarTema" />
+                <TableColumn fx:id="valoareColumn" prefWidth="75.0" text="Valoare" />
+            </columns>
+        </TableView>
+        <Label fx:id="labelIdStudent" layoutX="480.0" layoutY="77.0" text="IdStudent" />
+        <Label fx:id="labelNumarTema" layoutX="480.0" layoutY="110.0" text="NumarTema" />
+        <Label fx:id="labelValoare" layoutX="480.0" layoutY="144.0" text="Valoare" />
+        <TextField fx:id="textFieldIdStudent" layoutX="576.0" layoutY="72.0" />
+        <TextField fx:id="textFieldNumarTema" layoutX="576.0" layoutY="105.0" />
+        <TextField fx:id="textFieldValoare" layoutX="576.0" layoutY="139.0" />
+        <Button fx:id="buttonAdauga" layoutX="449.0" layoutY="275.0" mnemonicParsing="false" onAction="#saveNota" text="Adauga" />
+        <Button fx:id="buttonModifica" layoutX="560.0" layoutY="275.0" mnemonicParsing="false" onAction="#updateNota" text="Modifica" />
+        <Button fx:id="buttonElimina" layoutX="681.0" layoutY="275.0" mnemonicParsing="false" onAction="#deleteNota" text="Elimina" />
+        <Button fx:id="buttonSterge" layoutX="638.0" layoutY="189.0" mnemonicParsing="false" onAction="#clearNotaFields" text="Sterge" />
+      <Button fx:id="buttonFilstruStudent" layoutX="453.0" layoutY="346.0" mnemonicParsing="false" onAction="#filtruNotaStudent" text="FIltruStudent" />
+      <Button fx:id="buttonFilstruTema" layoutX="453.0" layoutY="397.0" mnemonicParsing="false" onAction="#filtruNotaTema" prefHeight="31.0" prefWidth="106.0" text="FiltruTema" />
+      <Button fx:id="buttonFilstru10" layoutX="521.0" layoutY="449.0" mnemonicParsing="false" onAction="#filtruNota10" prefHeight="31.0" prefWidth="156.0" text="10" />
+      <TextField fx:id="textFieldFiltruTema" layoutX="580.0" layoutY="397.0" prefHeight="31.0" prefWidth="167.0" />
+      <TextField fx:id="textFieldFiltruStudent" layoutX="580.0" layoutY="346.0" prefHeight="31.0" prefWidth="167.0" />
+      <TextField fx:id="textFieldNumeStudent" layoutX="576.0" layoutY="41.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,5 @@
+1,probabilitati lab 3,2
+3,seminar 2 map,10
+12,laborator 1 retele,12
+2,tema2,5
+4,tema4,7
